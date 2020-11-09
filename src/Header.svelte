@@ -1,6 +1,9 @@
 <style>	
 	header {
-    background-color: white;
+		background-color: white;
+	}
+
+	.content {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -14,7 +17,7 @@
 	
 	ul {
 		list-style-type: none;
-    overflow: hidden;
+    	overflow: hidden;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -22,10 +25,10 @@
 	}
 	
 	li {
-    color: #333;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+		color: #333;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
 	}
 	
 	li:hover {

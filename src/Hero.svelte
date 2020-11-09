@@ -30,5 +30,5 @@
 <section>
 	<img src="https://i.imgur.com/kHc6kdG.jpeg" alt="Jamal Moir" />
 	<h2>Jamal Moir</h2>
-	<h3>Full-Stack Software Engineer @ MakeLeaps</h3>
+	<h3>Full-Stack Software Engineer @ <a href="https://makeleaps.jp">MakeLeaps</a></h3>
 </section>
