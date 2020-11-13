@@ -4,7 +4,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0 2em;
+		padding: 0 1em;
 	}
 
 	h1 {
@@ -39,6 +39,14 @@
 		transition: background-color .3s, color .2s;
 	}
 
+	a {
+		color: var(--text-color);
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
 </style>
 
 <header>
@@ -46,8 +54,8 @@
 	
 	<nav>
 		<ul>
-			<li>About Me</li>
-			<li>Projects</li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#projects">Projects</a></li>
 		</ul>
 	</nav>
 </header>

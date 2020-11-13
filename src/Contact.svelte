@@ -31,6 +31,21 @@
     i {
         margin-right: var(--margin-half);
     }
+
+	@media only screen and (max-width: 600px) {
+		aside {
+			margin-left: 0;
+		}
+
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		li {
+			margin-right: var(--margin-double);
+		}
+	}
 </style>
 
 <aside class="contact">
