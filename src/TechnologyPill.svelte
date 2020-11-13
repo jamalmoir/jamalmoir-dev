@@ -57,6 +57,26 @@
         color: var(--text-colour);
         background-color: #ffca28;
     }
+
+    .python {
+        color: var(--text-2-colour);
+        background-color: #2b5b84;
+    }
+
+    .numpy {
+        color: var(--text-2-colour);
+        background-color: #013243;
+    }
+
+    .pandas {
+        color: var(--text-2-colour);
+        background-color: #130654;
+    }
+
+    .kivy {
+        color: var(--text-2-colour);
+        background-color: #333333;
+    }
 </style>
 
 <span class={name.toLowerCase()}>
