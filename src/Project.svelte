@@ -34,6 +34,16 @@
         align-items: center;
         flex-wrap: wrap;
     }
+
+	@media only screen and (max-width: 600px) {
+        section {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
 </style>
 
 <section>

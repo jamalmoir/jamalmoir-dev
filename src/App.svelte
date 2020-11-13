@@ -28,7 +28,8 @@
 		--margin-half: calc(var(--margin) / 2);
 		--margin-double: calc(var(--margin) * 2);
 
-		--content-width: 50em;
+		--content-width-desktop: 50em;
+		--content-width-mobile: 100%;
 		
 		--primary-colour: #24a0ed;
 		--primary-2-colour: #0072BA;
@@ -78,15 +79,26 @@
 	}
 
 	:global(.content) {
-		width: var(--content-width);
+		width: var(--content-width-desktop);
 		display: flex;
 		justify-content: space-between;
 	}
 
 	@media only screen and (max-width: 600px) {
-		:global(.content) {
-			width: 100%;
+		:global(main) {
+			width: var(--content-width-mobile);
 			flex-direction: column;
+		}
+
+		:global(.container) {
+			padding: var(--margin);
+		}
+
+		:global(.content) {
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			width: var(--content-width-mobile);
 		}
 	}
 
@@ -100,17 +112,37 @@
 
     h4 {
 		margin-bottom: var(--margin);
-   }
+   	}
 
-   .projects {
+    .projects {
 	   width: 100%;
-   }
+    }
 
-   .project-grid {
-	   width: 100%;
-	   display: flex;
-	   justify-content: space-between;
-   }
+    .project-grid {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+    }
+
+	@media only screen and (max-width: 600px) {
+		.about {
+			width: var(--content-width-mobile);
+		}
+
+		p {
+			margin-bottom: var(--margin);
+		}
+
+		.project-grid {
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+		}
+
+		.project {
+			margin-bottom: var(--margin);
+		}
+	}
 	
 </style>
 
@@ -120,7 +152,7 @@
 	<section class="container">
 		<div class="content">
 			<div class="about">
-				<h4>About Me</h4>
+				<a name="about"><h4>About Me</h4></a>
 				<p>
 					Jamal loves working on hard problems and creating software products that solve real-world issues and help real-world people. He is a full-stack software engineer at <a href="https://makeleaps.jp">MakeLeaps</a>, a fintech startup located in the heart of Tokyo. In his personal time he likes to persue a variety of hobbies such as leather crafting, weight lifting, and Brazillian Jiu Jitsu. Jamal has found writing this paragraph in the third-person to be very strange indeed.
 				</p>
@@ -131,15 +163,17 @@
 	<section class="container projects-container">
 		<div class="content">
 			<div class="projects">
-				<h4>Projects</h4>
+				<a name="projects"><h4>Projects</h4></a>
 				<div class="project-grid">
 					{#each projects as project}
-						<Project
-							title={project.title}
-							description={project.description}
-							imageURI={project.imageURI}
-							technologies={project.technologies}
-						/>
+						<div class="project">
+							<Project
+								title={project.title}
+								description={project.description}
+								imageURI={project.imageURI}
+								technologies={project.technologies}
+							/>
+						</div>
 					{/each}
 				</div>
 			</div>
