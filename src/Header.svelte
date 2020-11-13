@@ -1,18 +1,20 @@
 <style>	
 	header {
 		background-color: white;
-	}
-
-	.content {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		padding: 0 2em;
 	}
-	
+
 	h1 {
-		margin-left: 1em;
 		color: #333;
 		font-size: 1.5em;
+	}
+
+	h1:hover {
+		color: var(--primary-colour);
+		transition: color .2s;
 	}
 	
 	ul {
@@ -32,22 +34,20 @@
 	}
 	
 	li:hover {
-		background-color: var(--accent-colour);
+		background-color: var(--primary-colour);
 		color: white;
 		transition: background-color .3s, color .2s;
 	}
 
 </style>
 
-<header class="container">
-	<div class="content">
-		<h1>Jamal Moir</h1>
-		
-		<nav>
-			<ul>
-				<li>About Me</li>
-				<li>Projects</li>
-			</ul>
-		</nav>
-	</div>
+<header>
+	<h1>JAMAL MOIR</h1>
+	
+	<nav>
+		<ul>
+			<li>About Me</li>
+			<li>Projects</li>
+		</ul>
+	</nav>
 </header>
