@@ -8,6 +8,7 @@
 		padding: 2em;
 		margin-bottom: var(--margin-double);
 		background: linear-gradient(135deg, var(--primary-colour) 0%, var(--secondary-colour) 100%);
+		text-align: center;
 	}
 	
 	img {
@@ -27,8 +28,13 @@
 		line-height: 1.5;	
 		color: var(--text-2-colour); 
 	}
+
+	h2:hover {
+		color: var(--primary-colour);
+		transition: color .2s;
+	}
 	
-	h3, a {
+	h3 {
 		color: var(--text-2-colour); 
 		opacity: .8;
 		font-size: 1.2em;
@@ -39,5 +45,5 @@
 <section>
 	<img src="https://i.imgur.com/kHc6kdG.jpeg" alt="Jamal Moir" />
 	<h2>Jamal Moir</h2>
-	<h3>Full-Stack Software Engineer @ <a href="https://makeleaps.jp">MakeLeaps</a></h3>
+	<h3>Full-Stack Software Engineer @ MakeLeaps</h3>
 </section>
