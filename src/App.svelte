@@ -7,13 +7,13 @@
 	let projects = [
 		{
 			title: "This Site!",
-			description: "My personal site and my first project in Svelte.",
+			description: "Yep! This site was written from scratch using Svelte.",
 			imageURI: "https://imgur.com/CKuPBsk.png",
 			technologies: ["TypeScript", "Svelte", "HTML5", "CSS3", "Vercel"],
 		},
 		{
 			title: "Stroply",
-			description: "An online trading journal that allows you to create journals and record trades inside of them.",
+			description: "An online trading tool that allows you to create journals and record trades inside of them.",
 			imageURI: "https://miro.medium.com/max/1400/1*NKCkiVxCba5jAzeJFlWkhQ.jpeg",
 			technologies: ["TypeScript", "React", "Redux", "JSX", "CSS3", "Firestore"],
 		},
@@ -37,13 +37,16 @@
 		--secondary-2-colour: #0100CA;
 		--text-colour: #333;
 		--text-2-colour: #fff;
-		--sub-text-colour: #aaa;
-		--hero-bg-colour: #f5f8fa;
+		--background-colour: #f5f5f5;
 	}
 
 	:global(*, body) {
 		margin: 0;
 		padding: 0;
+	}
+
+	:global(body) {
+		background-color: var(--background-colour);
 	}
 	
 	:global(h1, h2, h4) {
@@ -66,16 +69,11 @@
 	:global(p) {
 		line-height: 1.7em;
 	}
-	
-	:global(header, section) {
-		border-bottom: 1px solid rgba(0,0,0,.125);
-	}
 
 	:global(.container) {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-bottom: var(--margin);
 	}
 
 	:global(.content) {
@@ -91,7 +89,8 @@
 		}
 
 		:global(.container) {
-			padding: var(--margin);
+			padding-left: var(--margin);
+			padding-right: var(--margin);
 		}
 
 		:global(.content) {
@@ -102,8 +101,8 @@
 		}
 	}
 
-	section {
-		padding-bottom: 2em;
+	.about-container {
+		margin-bottom: var(--margin-double);
 	}
 
 	.about {
@@ -113,6 +112,13 @@
     h4 {
 		margin-bottom: var(--margin);
    	}
+
+	.heading-anchor {
+		color: var(--text-colour);
+	}
+	.heading-anchor:hover {
+		text-decoration: none;
+	}
 
     .projects {
 	   width: 100%;
@@ -127,6 +133,7 @@
 	@media only screen and (max-width: 600px) {
 		.about {
 			width: var(--content-width-mobile);
+			margin-bottom: var(--margin);
 		}
 
 		p {
@@ -149,10 +156,10 @@
 <main>
 	<Header />
 	<Hero />
-	<section class="container">
+	<section class="container about-container">
 		<div class="content">
 			<div class="about">
-				<a name="about"><h4>About Me</h4></a>
+				<a name="about" class="heading-anchor"><h4>About Me</h4></a>
 				<p>
 					Jamal loves working on hard problems and creating software products that solve real-world issues and help real-world people. He is a full-stack software engineer at <a href="https://makeleaps.jp">MakeLeaps</a>, a fintech startup located in the heart of Tokyo. In his personal time he likes to persue a variety of hobbies such as leather crafting, weight lifting, and Brazillian Jiu Jitsu. Jamal has found writing this paragraph in the third-person to be very strange indeed.
 				</p>
@@ -163,7 +170,7 @@
 	<section class="container projects-container">
 		<div class="content">
 			<div class="projects">
-				<a name="projects"><h4>Projects</h4></a>
+				<a name="projects" class="heading-anchor"><h4>Projects</h4></a>
 				<div class="project-grid">
 					{#each projects as project}
 						<div class="project">
