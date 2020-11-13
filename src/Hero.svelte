@@ -1,12 +1,13 @@
 <style>
 	section {
-		background-color: var(--hero-bg-colour);
+		background-color: var(--primary-colour);
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
 		padding: 2em;
-		margin-bottom: var(--margin);
+		margin-bottom: var(--margin-double);
+		background: linear-gradient(135deg, var(--primary-colour) 0%, var(--secondary-colour) 100%);
 	}
 	
 	img {
@@ -24,18 +25,15 @@
 	h2 {
 		font-size: 3em;
 		line-height: 1.5;	
-		color: var(--text-colour); 
-	}
-
-	h2:hover {
-		color: var(--primary-colour);
-		transition: color .2s;
+		color: var(--text-2-colour); 
 	}
 	
-	h3 {
-		color: var(--sub-text-colour);
-		font-size: 1.5em;
+	h3, a {
+		color: var(--text-2-colour); 
+		opacity: .8;
+		font-size: 1.2em;
 	}
+
 </style>
 
 <section>
