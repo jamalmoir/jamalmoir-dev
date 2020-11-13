@@ -23,10 +23,6 @@
         margin: var(--margin);
     }
 
-    h4 {
-        margin-bottom: var(--margin-half);
-    }
-
     p {
         margin-bottom: var(--margin);
     }
@@ -52,7 +48,7 @@
 <section>
     <img src={imageURI} alt={title} />
     <div class="body">
-        <h4>{title}</h4>
+        <h5>{title}</h5>
         <p>{description}</p>
         <div class="technology-pills">
             {#each technologies as technology}

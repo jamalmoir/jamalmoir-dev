@@ -24,10 +24,6 @@
         text-decoration: none;
 	}
 
-    h4 {
-		margin-bottom: var(--margin);
-    }
-
     i {
         margin-right: var(--margin-half);
     }

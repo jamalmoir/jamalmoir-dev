@@ -2,9 +2,11 @@
 	import Header from "./Header.svelte";
 	import Hero from "./Hero.svelte";
 	import Contact from "./Contact.svelte";
-	import Project from "./Project.svelte";
+	import ProjectList from "./ProjectList.svelte";
 
-	let projects = [
+	import type { Project } from "./types";
+
+	let projects: Project[] = [
 		{
 			title: "This Site!",
 			description: "Yep! This site was written from scratch using Svelte.",
@@ -55,7 +57,8 @@
 		background-color: var(--background-colour);
 	}
 	
-	:global(h1, h2, h4) {
+	:global(h1, h2, h4, h5) {
+        color: var(--text-colour);
 		font-family: 'Raleway', sans-serif;
 	}
 
@@ -64,9 +67,17 @@
 	}
 
 	:global(h4) {
+		margin-bottom: var(--margin);
 		font-weight: 500;
 		font-size: 1.5em;
 	}
+
+    :global(h5) {
+        margin-bottom: var(--margin-half);
+        font-size: 1.2em;
+		font-weight: 500;
+    }
+
 	
 	:global(h3, p) {	
 		font-family: 'Merriweather', serif;
@@ -87,6 +98,15 @@
 		display: flex;
 		justify-content: space-between;
 	}
+
+	:global(.heading-anchor) {
+		color: var(--text-colour);
+	}
+
+	:global(.heading-anchor:hover) {
+		text-decoration: none;
+	}
+
 
 	@media only screen and (max-width: 600px) {
 		:global(main) {
@@ -115,32 +135,6 @@
 		width: 40em;
 	}
 
-    h4 {
-		margin-bottom: var(--margin);
-   	}
-
-	.heading-anchor {
-		color: var(--text-colour);
-	}
-	.heading-anchor:hover {
-		text-decoration: none;
-	}
-
-    .projects {
-	   width: 100%;
-    }
-
-    .project-grid {
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-    }
-
-	.project {
-		margin-bottom: var(--margin-double);
-	}
-
 	@media only screen and (max-width: 600px) {
 		.about {
 			width: var(--content-width-mobile);
@@ -150,14 +144,7 @@
 		p {
 			margin-bottom: var(--margin);
 		}
-
-		.project-grid {
-			flex-direction: column;
-			justify-content: flex-start;
-			align-items: center;
-		}
 	}
-	
 </style>
 
 <main>
@@ -168,29 +155,11 @@
 			<div class="about">
 				<a name="about" class="heading-anchor"><h4>About Me</h4></a>
 				<p>
-					Jamal loves working on hard problems and creating software products that solve real-world issues and help real-world people. He is a full-stack software engineer at <a href="https://makeleaps.jp">MakeLeaps</a>, a fintech startup located in the heart of Tokyo. In his personal time he likes to persue a variety of hobbies such as leather crafting, weight lifting, and Brazillian Jiu Jitsu. Jamal has found writing this paragraph in the third-person to be very strange indeed.
+					Jamal loves working on hard problems and creating software products that solve real-world issues and help real-world people. He is a full-stack software engineer at <a href="https://makeleaps.jp">MakeLeaps</a>, a fintech startup located in the heart of Tokyo. In his personal time he likes to persue a variety of hobbies such as leathercraft, weight lifting, and Brazillian Jiu Jitsu. Jamal has found writing this paragraph in the third-person to be very strange indeed.
 				</p>
 			</div>
 			<Contact />
 		</div>
 	</section>
-	<section class="container projects-container">
-		<div class="content">
-			<div class="projects">
-				<a name="projects" class="heading-anchor"><h4>Projects</h4></a>
-				<div class="project-grid">
-					{#each projects as project}
-						<div class="project">
-							<Project
-								title={project.title}
-								description={project.description}
-								imageURI={project.imageURI}
-								technologies={project.technologies}
-							/>
-						</div>
-					{/each}
-				</div>
-			</div>
-		</div>
-	</section>
+	<ProjectList projects={projects} />
 </main>
