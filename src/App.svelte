@@ -14,8 +14,14 @@
 		{
 			title: "Stroply",
 			description: "An online trading tool that allows you to create journals and record trades inside of them.",
-			imageURI: "https://miro.medium.com/max/1400/1*NKCkiVxCba5jAzeJFlWkhQ.jpeg",
+			imageURI: "https://i.imgur.com/dPy2xp8.jpg",
 			technologies: ["TypeScript", "React", "Redux", "JSX", "CSS3", "Firestore"],
+		},
+		{
+			title: "Reusable Machine Learning Components",
+			description: "A collection of Machine Learning algorithms impemented in Python and a companion GUI to visualise generated models.",
+			imageURI: "https://i.imgur.com/zMv2l2c.png",
+			technologies: ["Python", "Numpy", "Pandas", "Kivy"],
 		},
 	]
 </script>
@@ -37,7 +43,7 @@
 		--secondary-2-colour: #0100CA;
 		--text-colour: #333;
 		--text-2-colour: #fff;
-		--background-colour: #f5f5f5;
+		--background-colour: #f8f8ff;
 	}
 
 	:global(*, body) {
@@ -128,7 +134,12 @@
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
     }
+
+	.project {
+		margin-bottom: var(--margin-double);
+	}
 
 	@media only screen and (max-width: 600px) {
 		.about {
@@ -144,10 +155,6 @@
 			flex-direction: column;
 			justify-content: flex-start;
 			align-items: center;
-		}
-
-		.project {
-			margin-bottom: var(--margin);
 		}
 	}
 	
