@@ -42,7 +42,7 @@
 </style>
 
 <section>
-	<img src="./images/Optimized-jamalmoir.jpeg" alt="Jamal Moir"  width="100" height="100" />
+	<img src="./images/jamalmoir.jpeg" alt="Jamal Moir"  width="100" height="100" />
 	<h2>Jamal Moir</h2>
 	<h3>Full-Stack Software Engineer @ MakeLeaps</h3>
 </section>

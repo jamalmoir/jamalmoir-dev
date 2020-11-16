@@ -12,19 +12,19 @@
 		{
 			title: "This Site!",
 			description: "Yep! This site was written from scratch using Svelte.",
-			imageURI: "./images/Optimized-jamalmoirdev.png",
+			imageURI: "./images/jamalmoirdev.png",
 			technologies: ["TypeScript", "Svelte", "HTML5", "CSS3", "Vercel"],
 		},
 		{
 			title: "Stroply",
 			description: "An online trading tool that allows you to create journals and record trades inside of them.",
-			imageURI: "./images/Optimized-stroply.jpg",
+			imageURI: "./images/stroply.jpg",
 			technologies: ["TypeScript", "React", "Redux", "JSX", "CSS3", "Firestore"],
 		},
 		{
 			title: "Reusable Machine Learning Components",
 			description: "A collection of Machine Learning algorithms impemented in Python and a companion GUI to visualise generated models.",
-			imageURI: "./images/Optimized-mlcomponents.png",
+			imageURI: "./images/mlcomponents.png",
 			technologies: ["Python", "Numpy", "Pandas", "Kivy"],
 		},
 	]
