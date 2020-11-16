@@ -6,6 +6,16 @@
 </script>
 
 <style>
+    section {
+        padding-top: var(--margin-double);
+        padding-bottom: var(--margin-double);
+        background: var(--primary-2-colour);
+    }
+
+    h4, a {
+        color: var(--text-2-colour);
+    }
+
     .projects {
 	   width: 100%;
     }
@@ -30,7 +40,7 @@
     }
 </style>
 
-<section class="container projects-container">
+<section class="container">
     <div class="content">
         <div class="projects">
             <a name="projects" class="heading-anchor"><h4>Projects</h4></a>

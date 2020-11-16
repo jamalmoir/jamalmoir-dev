@@ -1,3 +1,8 @@
+<script>
+
+import ExperienceList from "./ExperienceList.svelte";
+
+</script>
 <style>	
 	header {
 		background-color: white;
@@ -55,6 +60,7 @@
 	<nav>
 		<ul>
 			<li><a href="#about">About Me</a></li>
+			<li><a href="#experience">Experience</a></li>
 			<li><a href="#projects">Projects</a></li>
 		</ul>
 	</nav>

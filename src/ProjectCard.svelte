@@ -9,7 +9,7 @@
 <style>
     section {
         width: 24em;
-        box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2),0 3px 3px 0 rgba(0,0,0,0.15);
+        box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2), 0 6px 6px 0 rgba(0,0,0,0.2), 0 12px 12px 0 rgba(0,0,0,0.15);
         background: white;
         padding-bottom: .01em;
     }

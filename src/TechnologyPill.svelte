@@ -77,8 +77,34 @@
         color: var(--text-2-colour);
         background-color: #333333;
     }
+
+    .scala {
+        color: var(--text-2-colour);
+        background-color: #DC322F;
+    }
+
+    .django {
+        color: var(--text-2-colour);
+        background-color: #0C4B33;
+    }
+
+    .angularjs {
+        color: var(--text-2-colour);
+        background-color: #b52e31;
+    }
+
+    .saltstack {
+        color: var(--text-2-colour);
+        background-color: #00eace;
+    }
+
+    .amazons3 {
+        color: var(--text-2-colour);
+        background-color: #FF9900;
+    }
+
 </style>
 
-<span class={name.toLowerCase()}>
+<span class={name.replaceAll(" ", "").toLowerCase()}>
     {name}
 </span>

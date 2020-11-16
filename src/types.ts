@@ -4,3 +4,12 @@ export interface Project {
     imageURI: string;
     technologies: string[];
 }
+
+export interface Experience {
+    company: string;
+    jobTitle: string;
+    website: string;
+    description: string;
+    responsibilities: string[];
+    skills: string[];
+}

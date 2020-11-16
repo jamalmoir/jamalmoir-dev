@@ -3,8 +3,10 @@
 	import Hero from "./Hero.svelte";
 	import Contact from "./Contact.svelte";
 	import ProjectList from "./ProjectList.svelte";
+	import ExperienceList from "./ExperienceList.svelte";
 
 	import type { Project } from "./types";
+	import type { Experience } from "./types";
 
 	let projects: Project[] = [
 		{
@@ -26,13 +28,43 @@
 			technologies: ["Python", "Numpy", "Pandas", "Kivy"],
 		},
 	]
-</script>
+
+	let experiences: Experience[] = [
+		{
+			company: "MakeLeaps",
+			jobTitle: "Full-Stack Software Engineer (Part-Time)",
+			website: "https://makeleaps.jp",
+			description: "",
+			responsibilities: [
+				"Built star schema analytics database and ETL process loading data from production.",
+				"Improved autid trails of user actions within app.",
+				"Worked on various features and improvements in core app."
+			],
+			skills: ["Python", "Scala", "Django" , "Numpy", "Pandas", "TypeScript", "AngularJS", "SaltStack", "Amazon S3"],
+		},
+		{
+			company: "MakeLeaps",
+			jobTitle: "Full-Stack Software Engineer",
+			website: "https://makeleaps.jp",
+			description: "",
+			responsibilities: [
+				"Lead dev for Bookkeeping app.",
+				"Pricing analysis and simulation.",
+				"Managing Trello board for development tasks and building reports for management.",
+				"Overhauld JavaScript codebase converting it to TypeScript and improving structure.",
+				"Created user-facing reporting functions, API, and frontend.",
+				"Worked on various features and improvements in core app."
+			],
+			skills: ["Python", "Django" , "Numpy", "Pandas", "TypeScript", "AngularJS", "React"],
+		}
+	]
+	</script>
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Raleway:wght@400;500;600;900&display=swap');
 
 	:global(:root) {
-		--margin: 1em;
+		--margin: 1.5em;
 		--margin-half: calc(var(--margin) / 2);
 		--margin-double: calc(var(--margin) * 2);
 
@@ -91,6 +123,10 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	:global(.container:not(:last-child)) {
+		margin-bottom: var(--margin-double);
 	}
 
 	:global(.content) {
@@ -161,5 +197,6 @@
 			<Contact />
 		</div>
 	</section>
+	<ExperienceList experiences={experiences} />
 	<ProjectList projects={projects} />
 </main>
