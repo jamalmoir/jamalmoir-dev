@@ -3,6 +3,8 @@
     export let title: string;
     export let description: string;
     export let imageURI: string;
+    export let liveURL: string | null;
+    export let gitHubURL: string | null;
     export let technologies: string[];
 </script>
 
@@ -25,6 +27,22 @@
 
     p {
         margin-bottom: var(--margin);
+    }
+
+    .links {
+        margin-top: var(--margin);
+    }
+
+    span:not(:last-child) {
+        margin-right: var(--margin);
+    }
+
+    a {
+        opacity: .6;
+    }
+
+    i {
+        margin-right: .3em;
     }
 
     .technology-pills {
@@ -54,6 +72,14 @@
             {#each technologies as technology}
                 <TechnologyPill name={technology} />
             {/each}
+        </div>
+        <div class="links">
+            {#if liveURL }
+                <span><a href={liveURL}><i class="fas fa-broadcast-tower"></i>Live Site</a></span>
+            {/if}
+            {#if gitHubURL }
+                <span><a href={gitHubURL}><i class="fab fa-github-square"></i>GitHub</a></span>
+            {/if}
         </div>
     </div>
 </section>
