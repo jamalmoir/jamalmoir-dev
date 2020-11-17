@@ -9,12 +9,12 @@ import ExperienceList from "./ExperienceList.svelte";
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 0 1em;
+		padding: 0 1rem;
 	}
 
 	h1 {
 		color: #333;
-		font-size: 1.5em;
+		font-size: 1.5rem;
 	}
 
 	h1:hover {

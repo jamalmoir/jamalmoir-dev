@@ -18,8 +18,8 @@
     }
 
     ul {
-        text-indent: 2em;
-        line-height: 1.5em;
+        text-indent: 2rem;
+        line-height: 1.5rem;
         margin: var(--margin) 0;
     }
 

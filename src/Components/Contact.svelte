@@ -6,7 +6,7 @@
 	.contact ul {
 		list-style-type: none;
 		overflow: hidden;
-        font-size: 1.2em;
+        font-size: 1.2rem;
 	}
 	
 	.contact li {

@@ -10,14 +10,14 @@
 
 <style>
     section {
-        width: 24em;
-        box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2), 0 6px 6px 0 rgba(0,0,0,0.2), 0 12px 12px 0 rgba(0,0,0,0.15);
+        width: 24rem;
+		box-shadow: var(--elevation-middle-x) var(--elevation-middle-y) var(--elevation-middle-blur) var(--shadow-colour);
         background: white;
-        padding-bottom: .01em;
+        padding-bottom: .01rem;
     }
 
     img {
-        width: 24em;
+        width: 24rem;
         border-bottom: solid 1px rgba(0, 0, 0, .1);
     }
 
@@ -42,7 +42,7 @@
     }
 
     i {
-        margin-right: .3em;
+        margin-right: .3rem;
     }
 
     .technology-pills {
