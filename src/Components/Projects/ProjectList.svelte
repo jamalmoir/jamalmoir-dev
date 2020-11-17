@@ -51,6 +51,8 @@
                             title={project.title}
                             description={project.description}
                             imageURI={project.imageURI}
+                            liveURL={project.liveURL}
+                            gitHubURL={project.gitHubURL}
                             technologies={project.technologies}
                         />
                     </div>
