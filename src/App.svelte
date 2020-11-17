@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Header from "./Header.svelte";
-	import Hero from "./Hero.svelte";
-	import Contact from "./Contact.svelte";
-	import ProjectList from "./ProjectList.svelte";
-	import ExperienceList from "./ExperienceList.svelte";
+	import Header from "./Components/Header.svelte";
+	import Hero from "./Components/Hero.svelte";
+	import Contact from "./Components/Contact.svelte";
+	import ProjectList from "./Components/Projects/ProjectList.svelte";
+	import ExperienceList from "./Components/ExperienceList.svelte";
 
 	import type { Project } from "./types";
 	import type { Experience } from "./types";

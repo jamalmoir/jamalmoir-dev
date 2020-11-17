@@ -1,6 +1,6 @@
 <script lang="typescript">
     import ProjectCard from "./ProjectCard.svelte";
-    import type { Project } from "./types";
+    import type { Project } from "../../types";
     
     export let projects: Project[];
 </script>
