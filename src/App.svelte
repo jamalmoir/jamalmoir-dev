@@ -67,14 +67,14 @@
 	</script>
 
 <style>
-	@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Raleway:wght@400;500;600;900&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Raleway:wght@400;500;600;700;800;900&display=swap');
 
 	:global(:root) {
-		--margin: 1.5em;
+		--margin: 1rem;
 		--margin-half: calc(var(--margin) / 2);
 		--margin-double: calc(var(--margin) * 2);
 
-		--content-width-desktop: 50em;
+		--content-width-desktop: 50rem;
 		--content-width-mobile: 100%;
 		
 		--primary-colour: #24a0ed;
@@ -84,6 +84,17 @@
 		--text-colour: #333;
 		--text-2-colour: #fff;
 		--background-colour: #f8f8ff;
+		--shadow-colour: rgba(0,0,0,0.25);
+
+		--elevation-highest-x: 0;
+		--elevation-highest-y: 20px;
+		--elevation-highest-blur: 40px;
+		--elevation-middle-x: 0;
+		--elevation-middle-y: 10px;
+		--elevation-middle-blur: 20px;
+		--elevation-lowest-x: 0;
+		--elevation-lowest-y: 2px;
+		--elevation-lowest-blur: 5px;
 	}
 
 	:global(*, body) {
@@ -106,14 +117,15 @@
 
 	:global(h4) {
 		margin-bottom: var(--margin);
-		font-weight: 500;
-		font-size: 1.5em;
+		font-weight: 700;
+		font-size: 1.5rem;
 	}
 
     :global(h5) {
         margin-bottom: var(--margin-half);
-        font-size: 1.2em;
-		font-weight: 500;
+        font-size: 1.2rem;
+		font-weight: 600;
+		opacity: .8;
     }
 
 	
@@ -122,7 +134,7 @@
 	}
 
 	:global(p) {
-		line-height: 1.7em;
+		line-height: 1.7rem;
 	}
 
 	:global(.container) {
@@ -174,7 +186,7 @@
 	}
 
 	.about {
-		width: 40em;
+		width: 40rem;
 	}
 
 	@media only screen and (max-width: 600px) {

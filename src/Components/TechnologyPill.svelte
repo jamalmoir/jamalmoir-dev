@@ -4,13 +4,14 @@
 
 <style>
     span {
-        font-size: .7em;;
+        font-size: .52rem;;
         padding: var(--margin-half);
-        border-radius: .2em;
+        border-radius: .2rem;
         margin-right: var(--margin-half);
         margin-bottom: var(--margin-half);
         color: var(--text-2-colour);
         background-color: #000000;
+        opacity: .8;
     }
 
     .typescript {

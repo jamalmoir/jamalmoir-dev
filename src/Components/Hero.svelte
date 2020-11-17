@@ -5,7 +5,7 @@
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
-		padding: 2em;
+		padding: 2rem;
 		margin-bottom: var(--margin-double);
 		background: linear-gradient(135deg, var(--primary-colour) 0%, var(--secondary-colour) 100%);
 		text-align: center;
@@ -14,29 +14,20 @@
 	img {
 		border-radius: 100px;
 		border: 5px solid white;
-		box-shadow: 0 0 5px 0 rgba(0,0,0,0.2),0 0 20px 0 rgba(0,0,0,0.15);
+		box-shadow: var(--elevation-highest-x) var(--elevation-highest-y) var(--elevation-highest-blur) var(--shadow-colour);
 	}
 
-	img:hover {
-		border-color: var(--primary-colour);
-		transition: border-color .2s;
-	}
-	
 	h2 {
-		font-size: 3em;
+		font-size: 3rem;
 		line-height: 1.5;	
 		color: var(--text-2-colour); 
+		text-shadow: var(--elevation-middle-x) var(--elevation-middle-y) var(--elevation-middle-blur) var(--shadow-colour);
 	}
 
-	h2:hover {
-		color: var(--primary-colour);
-		transition: color .2s;
-	}
-	
 	h3 {
 		color: var(--text-2-colour); 
 		opacity: .8;
-		font-size: 1.2em;
+		font-size: 1.2rem;
 	}
 
 </style>
