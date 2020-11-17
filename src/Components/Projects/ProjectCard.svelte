@@ -1,5 +1,5 @@
 <script lang='typescript'>
-    import TechnologyPill from "./TechnologyPill.svelte";
+    import TechnologyPill from "../TechnologyPill.svelte";
     export let title: string;
     export let description: string;
     export let imageURI: string;

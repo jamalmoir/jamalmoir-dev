@@ -1,6 +1,6 @@
 <script lang="typescript">
     import TechnologyPill from "./TechnologyPill.svelte";
-    import type { Experience } from "./types";
+    import type { Experience } from "../types";
     export let experiences: Experience[];
 </script>
 
