@@ -17,26 +17,26 @@
     }
 
     .projects {
-	   width: 100%;
+       width: 100%;
     }
 
     .project-grid {
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
-	.project {
-		margin-bottom: var(--margin-double);
-	}
+    .project {
+        margin-bottom: var(--margin-double);
+    }
 
-	@media only screen and (max-width: 600px) {
-		.project-grid {
-			flex-direction: column;
-			justify-content: flex-start;
-			align-items: center;
-		}
+    @media only screen and (max-width: 600px) {
+        .project-grid {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
     }
 </style>
 

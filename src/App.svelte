@@ -37,16 +37,16 @@
 
 	let experiences: Experience[] = [
 		{
-			company: "MakeLeaps",
-			jobTitle: "Full-Stack Software Engineer (Part-Time)",
-			website: "https://makeleaps.jp",
+			company: "Kraken Technology",
+			jobTitle: "Backend Engineer",
+			website: "https://octopus.energy/",
 			description: "",
 			responsibilities: [
-				"Built star schema analytics database and ETL process loading data from production.",
-				"Improved autid trails of user actions within app.",
-				"Worked on various features and improvements in core app."
+				"Financials team lead.",
+				"Developed payments system for Japan.",
+                                "Part of the team bringing Kraken Technologies and Octopus energy to Japan."
 			],
-			skills: ["Python", "Scala", "Django" , "Numpy", "Pandas", "TypeScript", "AngularJS", "SaltStack", "Amazon S3"],
+			skills: ["Python", "Django", "GraphQL", "React"],
 		},
 		{
 			company: "MakeLeaps",
@@ -62,7 +62,19 @@
 				"Worked on various features and improvements in core app."
 			],
 			skills: ["Python", "Django" , "Numpy", "Pandas", "TypeScript", "AngularJS", "React"],
-		}
+		},
+		{
+			company: "MakeLeaps",
+			jobTitle: "Full-Stack Software Engineer (Remote)",
+			website: "https://makeleaps.jp",
+			description: "",
+			responsibilities: [
+				"Built star schema analytics database and ETL process loading data from production.",
+				"Improved autid trails of user actions within app.",
+				"Worked on various features and improvements in core app."
+			],
+			skills: ["Python", "Scala", "Django" , "Numpy", "Pandas", "TypeScript", "AngularJS", "SaltStack", "Amazon S3"],
+		},
 	]
 	</script>
 
@@ -76,7 +88,7 @@
 
 		--content-width-desktop: 50rem;
 		--content-width-mobile: 100%;
-		
+
 		--primary-colour: #24a0ed;
 		--primary-2-colour: #0072BA;
 		--secondary-colour: #651FFF;
@@ -105,7 +117,7 @@
 	:global(body) {
 		background-color: var(--background-colour);
 	}
-	
+
 	:global(h1, h2, h4, h5) {
         color: var(--text-colour);
 		font-family: 'Raleway', sans-serif;
@@ -128,8 +140,8 @@
 		opacity: .8;
     }
 
-	
-	:global(h3, p) {	
+
+	:global(h3, p) {
 		font-family: 'Merriweather', serif;
 	}
 
@@ -209,7 +221,7 @@
 			<div class="about">
 				<a name="about" class="heading-anchor"><h4>About Me</h4></a>
 				<p>
-					Jamal loves working on hard problems and creating software products that solve real-world issues and help real-world people. He is a full-stack software engineer at <a href="https://makeleaps.jp">MakeLeaps</a>, a fintech startup located in the heart of Tokyo. In his personal time he likes to persue a variety of hobbies such as leathercraft, weight lifting, and Brazillian Jiu Jitsu. Jamal has found writing this paragraph in the third-person to be very strange indeed.
+					Jamal loves working on hard problems and creating software products that solve real-world issues and help real-world people. He is a backend engineer and team lead at <a href="https://octopus.energy">Kraken Technologies</a>, a British green energy startup that has made its way to Japan. In his personal time he likes to persue a variety of hobbies such as leathercraft, weight lifting, and Brazillian Jiu Jitsu. Jamal has found writing this paragraph in the third-person to be very strange indeed.
 				</p>
 			</div>
 			<Contact />
