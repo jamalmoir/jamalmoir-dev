@@ -38,15 +38,16 @@
 	let experiences: Experience[] = [
 		{
 			company: "Kraken Technology",
-			jobTitle: "Backend Engineer",
+			jobTitle: "Senior Backend Engineer",
 			website: "https://octopus.energy/",
 			description: "",
 			responsibilities: [
 				"Financials team lead.",
 				"Developed payments system for Japan.",
+                                "Line Manager.",
                                 "Part of the team bringing Kraken Technologies and Octopus energy to Japan."
 			],
-			skills: ["Python", "Django", "GraphQL", "React"],
+			skills: ["Python", "Django", "GraphQL", "React", "Leadership", "Management"],
 		},
 		{
 			company: "MakeLeaps",
